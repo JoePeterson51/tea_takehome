@@ -24,5 +24,6 @@ RSpec.describe 'add subscription to user' do
     expect(data[:attributes][:user_id].to_i).to eq(user.id)
     expect(data[:attributes][:tea_id].to_i).to eq(tea.id)
     expect(data[:attributes][:status]).to eq("Active")
+
   end
 end
